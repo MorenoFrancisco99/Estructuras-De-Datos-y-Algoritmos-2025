@@ -1,0 +1,1 @@
+﻿Los ejercicios 1 2 y 3 son implementaciones de listas. Estan en la carpeta DATs
