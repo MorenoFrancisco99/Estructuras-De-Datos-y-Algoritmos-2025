@@ -12,3 +12,4 @@ C:\Users\FRANCISCO\Documents\Proj\LCC Ej\ConsoleApp1\obj\Debug\net8.0\refint\Con
 C:\Users\FRANCISCO\Documents\Proj\LCC Ej\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 C:\Users\FRANCISCO\Documents\Proj\LCC Ej\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\FRANCISCO\Documents\Proj\LCC Ej\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\FRANCISCO\Documents\Proj\LCC Ej\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.sourcelink.json

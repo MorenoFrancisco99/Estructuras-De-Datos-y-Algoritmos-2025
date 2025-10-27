@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\ejercicio 3\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\ejercicio 3\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 5\\hashbucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 5\\hashbucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\ejercicio 3\\huffmancompresser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\ejercicio 3\\huffmancompresser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 5\\hashabierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 5\\hashabierto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\practico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\practico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\ejercicio 3\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\ejercicio 3\\ejercicio3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 5\\hashencadenado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 5\\hashencadenado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\ejercicio 3\\huffmantree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\ejercicio 3\\huffmantree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\sampletext.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\sampletext.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|c:\\users\\francisco\\documents\\proj\\lcc ej\\consoleapp1\\practico 4\\sampletext.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8C4C83B9-7877-4DA7-8CD0-7B0274E3A8BD}|ConsoleApp1.csproj|solutionrelative:practico 4\\sampletext.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAALwCAAAAAAAAAAAAAP4CAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T22:17:59.33Z",
               "IsPinned": true
@@ -61,7 +69,7 @@
               "RelativeDocumentMoniker": "Menu.cs",
               "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Menu.cs",
               "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwBAAAACfAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T14:13:34.478Z",
               "IsPinned": true
@@ -72,7 +80,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "HashBucket.cs",
+              "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashBucket.cs",
+              "RelativeDocumentMoniker": "Practico 5\\HashBucket.cs",
+              "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashBucket.cs",
+              "RelativeToolTip": "Practico 5\\HashBucket.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T15:54:00.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HashEncadenado.cs",
+              "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashEncadenado.cs",
+              "RelativeDocumentMoniker": "Practico 5\\HashEncadenado.cs",
+              "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashEncadenado.cs",
+              "RelativeToolTip": "Practico 5\\HashEncadenado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T15:53:43.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HashAbierto.cs",
+              "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashAbierto.cs",
+              "RelativeDocumentMoniker": "Practico 5\\HashAbierto.cs",
+              "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 5\\HashAbierto.cs",
+              "RelativeToolTip": "Practico 5\\HashAbierto.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAYwBMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T21:54:50.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Practico4.cs",
               "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Practico4.cs",
               "RelativeDocumentMoniker": "Practico 4\\Practico4.cs",
@@ -80,24 +127,12 @@
               "RelativeToolTip": "Practico 4\\Practico4.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T21:54:01.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HuffmanCompresser.cs",
-              "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\HuffmanCompresser.cs",
-              "RelativeDocumentMoniker": "Practico 4\\Ejercicio 3\\HuffmanCompresser.cs",
-              "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\HuffmanCompresser.cs*",
-              "RelativeToolTip": "Practico 4\\Ejercicio 3\\HuffmanCompresser.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:19:13.265Z",
+              "WhenOpened": "2025-10-15T21:54:01.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "SampleText.txt",
               "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\SampleText.txt",
               "RelativeDocumentMoniker": "Practico 4\\SampleText.txt",
@@ -109,25 +144,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HuffmanTree.cs",
               "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\HuffmanTree.cs",
               "RelativeDocumentMoniker": "Practico 4\\Ejercicio 3\\HuffmanTree.cs",
               "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\HuffmanTree.cs",
               "RelativeToolTip": "Practico 4\\Ejercicio 3\\HuffmanTree.cs",
-              "ViewState": "AgIAAG4CAAAAAAAAAAAYwIwCAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwCAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-17T14:28:07.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Ejercicio3.cs",
               "DocumentMoniker": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\Ejercicio3.cs",
               "RelativeDocumentMoniker": "Practico 4\\Ejercicio 3\\Ejercicio3.cs",
               "ToolTip": "C:\\Users\\FRANCISCO\\Documents\\Proj\\LCC Ej\\ConsoleApp1\\Practico 4\\Ejercicio 3\\Ejercicio3.cs",
               "RelativeToolTip": "Practico 4\\Ejercicio 3\\Ejercicio3.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T19:42:31.728Z",
               "EditorCaption": ""

@@ -9,8 +9,18 @@ namespace ConsoleApp1
     internal class Program
     {
 
+
         static void Main(string[] args)
         {
+            var menus = new Dictionary<string, string[]>
+            {
+                { "Main", new[] { "Testear Estructuras", "Practico 2", "Practico 3", "Practico 4", "Salir" } },
+                { "Testear Estructuras", new[] { "Pila Encadenada", "Lista Enlazada Ordenada", "Pila Secuencial", "Cola Secuencial", "Cola Encadenada", "Lista Secuencial", "Lista Enlazada", "Lista Cursores","Arbol Binario de Busqueda", "Regresar" } },
+                { "Practico 2", new[] { "Ejercicio 2", "Ejercicio 3", "Ejercicio 4", "Ejercicio 7", "Regresar" } },
+                { "Practico 3", new[] { "Ejercicio 1", "Ejercicio 2", "Ejercicio 3", "Ejercicio 4", "Ejercicio 5", "Regresar" } },
+                { "Practico 4", new[] { "Ejercicio 2 - Inciso A", "Ejercicio 2 - Inciso B", "Ejercicio 2 - Inciso C", "Ejercicio 2 - Inciso D", "Ejercicio 3", "Regresar"} }
+            };
+
             Console.BufferHeight = 5000;
 
             Menu menu = new Menu();
@@ -22,7 +32,7 @@ namespace ConsoleApp1
             {
 
 
-                option = menu.Show();
+                option = menu.Show(menus);
 
                 // option viene en el formato "Categoria/Opcion", por ejemplo: "Testear Estructuras/Lista Enlazada"
                 string[] opciones = option.Split('/');

@@ -1,0 +1,22 @@
+# Archivos de build
+/bin/
+/obj/
+/build/
+/dist/
+
+# Configuraciones locales
+.vs/
+.vscode/
+*.user
+*.suo
+*.log
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Archivos sensibles
+*.env
+*.key
+*.pfx
