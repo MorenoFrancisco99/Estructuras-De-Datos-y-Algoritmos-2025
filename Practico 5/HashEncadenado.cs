@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Open.Numeric.Primes.Extensions;
 namespace ConsoleApp1.Practico_5
 {
     internal class HashEncadenado
@@ -21,21 +21,19 @@ namespace ConsoleApp1.Practico_5
 
         private Node[] tablaHashEncadenamiento; 
         int tamaño;
+        int colisionesEsperadas = 3;
 
 
-        public HashEncadenado(int tamaño = 199)
+        public HashEncadenado(int tamaño)
         {
-            if (IsPrime(tamaño) == 0)
+            tamaño = (int)(tamaño / colisionesEsperadas);
+            if (!tamaño.IsPrime())
             {
-                Console.WriteLine($"El tamaño {tamaño} no es primo. Se utilizará el siguiente número primo.");
-                tamaño = NextPrime(tamaño);
-            }
-            tablaHashEncadenamiento = new Node[tamaño];
-            for (int i = 0; i < tamaño; i++)
-            {
-                tablaHashEncadenamiento[i] = null; // null indica que la posicion esta vacia
+                tamaño = (int)PrimeExtensions.NextPrime(tamaño);
             }
             this.tamaño = tamaño;
+
+            tablaHashEncadenamiento = Enumerable.Repeat<Node>(null, tamaño).ToArray();
         }
 
         public int Insertar(int num)
@@ -58,27 +56,22 @@ namespace ConsoleApp1.Practico_5
             return hashIndex;
         }
 
-
-
-
-        private int IsPrime(int num)
+        private int Buscar(int num)
         {
-            if (num <= 1) return 0;
-            for (int i = 2; i <= Math.Sqrt(num); i++)
+            int hashIndex = num % tamaño;
+            Node current = tablaHashEncadenamiento[hashIndex];
+            while (current != null)
             {
-                if (num % i == 0) return 0;
+                if (current.Key == num)
+                {
+                    return hashIndex; // Devuelve el índice del bucket donde se encuentra la clave
+                }
+                current = current.Next;
             }
-            return 1;
+            return -1; // No encontrado
         }
 
-        private int NextPrime(int num)
-        {
-            int next = num + 1;
-            while (IsPrime(next) == 0)
-            {
-                next++;
-            }
-            return next;
-        }
+
+
     }
 }

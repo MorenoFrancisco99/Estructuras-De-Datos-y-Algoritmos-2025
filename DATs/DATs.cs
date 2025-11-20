@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.DATs.Implementation;
+using ConsoleApp1.Practico_6;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace ConsoleApp1.DATs
         public ICola<int> colaSecuencial;
         public ICola<int> colaEncadenada;
         public ArbolBinariodeBusqueda arbolBinarioDeBusqueda;
+        public GrafoSecuencial grafoSecuencial;
 
         public DAT_s()
         {
@@ -26,6 +28,7 @@ namespace ConsoleApp1.DATs
             colaSecuencial = new ColaSecuencial<int>(32);
             colaEncadenada = new ColaEncadenada<int>();
             arbolBinarioDeBusqueda = new ArbolBinariodeBusqueda();
+            grafoSecuencial = new GrafoSecuencial(32);
         }
 
     }

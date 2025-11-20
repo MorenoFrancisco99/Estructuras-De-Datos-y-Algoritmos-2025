@@ -95,8 +95,8 @@ namespace ConsoleApp1.DATs.Implementation
 
         private Nodo EliminarRecursivo(Nodo nodo, int elemento)
         {
-            if (nodo == null)
-                throw new InvalidOperationException("Elemento no encontrado");
+            if (nodo == null) //Llegamos a una hoja sin encontrar el elemento
+                throw new InvalidOperationException("Elemento no encontrado"); //retornamos error
             if (elemento < nodo.valor)
                 nodo.izquierdo = EliminarRecursivo(nodo.izquierdo, elemento);
             else if (elemento > nodo.valor)
@@ -142,7 +142,7 @@ namespace ConsoleApp1.DATs.Implementation
 
             Console.WriteLine("Elemento encontrado: ", resultado);
 
-            return 1; //CONSULTAR: Devolver el nodo encontrado en vez de 1 
+            return 1; 
         }
 
 
@@ -150,9 +150,9 @@ namespace ConsoleApp1.DATs.Implementation
         {
             if (nodo == null || nodo.valor == elemento)
                 return nodo;
-            if (elemento < nodo.valor)
+            if (elemento < nodo.valor) //Si el elemento es menor, buscar en el subarbol izquierdo
                 return BuscarRecursivo(nodo.izquierdo, elemento);
-            return BuscarRecursivo(nodo.derecho, elemento);
+            return BuscarRecursivo(nodo.derecho, elemento); //Si el elemento es mayor, buscar en el subarbol derecho
         }
 
 
@@ -654,5 +654,56 @@ namespace ConsoleApp1.DATs.Implementation
 
 
 
+        /*
+         Alternativas:
+            -El nodo es null: retornamos
+            -El nodo tiene un hijo: añadimos a la lista el actual y vamos al hijo
+            -El nodo tiene dos hijos: continue
+         
+         
+         */
+        private List<Nodo> PruebaParcial()
+        {
+            List<Nodo> elementos = new List<Nodo> ();
+            pruebaRecursiva(raiz, elementos);
+            return elementos;
+
+        }
+
+        private void pruebaRecursiva(Nodo actual, List<Nodo> lista)
+        {
+            if(actual ==null)
+                return ;
+            if((actual.izquierdo != null && actual.derecho == null) || (actual.izquierdo == null && actual.derecho != null))
+                lista.Add(actual); 
+            pruebaRecursiva(actual.izquierdo, lista);
+            pruebaRecursiva(actual.derecho, lista);
+            return ;
+
+        }
+
+
+        private int Prueba2(int nivel)
+        {
+            if(nivel < 1)
+                return -1;
+            PrubaRecursiva(raiz, 1, nivel);
+            return 1;
+        }
+        private void PrubaRecursiva(Nodo actual, int nivelActual, int nivelDeseado)
+        {
+            if (actual == null)
+                return;
+            if(nivelActual== nivelDeseado)
+            {
+                Console.WriteLine(actual.valor);
+                return;
+            }
+
+            PrubaRecursiva(actual.izquierdo, nivelActual + 1, nivelDeseado);
+            PrubaRecursiva(actual.derecho, nivelActual + 1, nivelDeseado);
+
+
+        }
     }
 }

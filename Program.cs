@@ -1,7 +1,5 @@
 ﻿using ConsoleApp1.DATs.Implementation;
-using ConsoleApp1.Ejs;
-using ConsoleApp1.Practco_2;
-using System.Reflection;
+using ConsoleApp1.Practico_6;
 
 namespace ConsoleApp1
 {
@@ -15,7 +13,7 @@ namespace ConsoleApp1
             var menus = new Dictionary<string, string[]>
             {
                 { "Main", new[] { "Testear Estructuras", "Practico 2", "Practico 3", "Practico 4", "Salir" } },
-                { "Testear Estructuras", new[] { "Pila Encadenada", "Lista Enlazada Ordenada", "Pila Secuencial", "Cola Secuencial", "Cola Encadenada", "Lista Secuencial", "Lista Enlazada", "Lista Cursores","Arbol Binario de Busqueda", "Regresar" } },
+                { "Testear Estructuras", new[] { "Pila Encadenada", "Lista Enlazada Ordenada", "Pila Secuencial", "Cola Secuencial", "Cola Encadenada", "Lista Secuencial", "Lista Enlazada", "Lista Cursores","Arbol Binario de Busqueda","Grafo Secuencial", "Regresar" } },
                 { "Practico 2", new[] { "Ejercicio 2", "Ejercicio 3", "Ejercicio 4", "Ejercicio 7", "Regresar" } },
                 { "Practico 3", new[] { "Ejercicio 1", "Ejercicio 2", "Ejercicio 3", "Ejercicio 4", "Ejercicio 5", "Regresar" } },
                 { "Practico 4", new[] { "Ejercicio 2 - Inciso A", "Ejercicio 2 - Inciso B", "Ejercicio 2 - Inciso C", "Ejercicio 2 - Inciso D", "Ejercicio 3", "Regresar"} }
@@ -27,6 +25,7 @@ namespace ConsoleApp1
             var app = new AppContext();
             const int CAPACIDAD = 5;
             string option;
+            Random rand = new Random();
 
             while (true) //Bucle infinito hasta que el usuario decida salir. Se sale por otro lado
             {
@@ -284,20 +283,20 @@ namespace ConsoleApp1
                                 pilaEnl.Suprimir(); // Se usa pilaEnl
 
                                 break;
-                          
-                            
-                            
+
+
+
                             case "lista enlazada ordenada":
 
-                                break;                            
-                          
-                            
-                            
+                                break;
+
+
+
                             case "Pila Secuencial":
                                 Console.WriteLine("--- INICIO DE PRUEBAS DE ROBUSTEZ DE PILA SECUENCIAL ---");
 
                                 // 1. Inicializar la pila con capacidad reducida para forzar límites
-                               
+
                                 PilaSecuencial pila = new PilaSecuencial(CAPACIDAD);
 
                                 Console.WriteLine($"\n[INFO] Pila inicializada con capacidad: {CAPACIDAD}.");
@@ -590,7 +589,7 @@ namespace ConsoleApp1
                                 Console.WriteLine("--- INICIO DE PRUEBAS DE ROBUSTEZ PARA ListaCursores ---");
 
                                 // 1. Inicializar la lista con capacidad 5 para facilitar el manejo de 'llena'
-                                
+
                                 ListaCursores lista = new ListaCursores(CAPACIDAD);
 
                                 Console.WriteLine($"\n[INFO] Lista inicializada con capacidad: {CAPACIDAD}");
@@ -711,6 +710,32 @@ namespace ConsoleApp1
                                 app.DATs.arbolBinarioDeBusqueda.Test();
 
                                 break;
+
+                            case "Grafo Secuencial":
+
+                                int GRAFOTAMAÑO = 5;
+                                GrafoSecuencial grafo = new GrafoSecuencial(GRAFOTAMAÑO);
+                                //-----------------------Teste grafo secuencialo-----------------
+                                //----------Insertando------------------
+                                for (int i = 0; i < GRAFOTAMAÑO*2; i++)
+                                {
+                                    try
+                                    {
+                                        int num1 = rand.Next(GRAFOTAMAÑO);
+                                        int num2 = rand.Next(GRAFOTAMAÑO);
+                                        grafo.AgregarArista(num1, num2);
+                                        Console.WriteLine($"Insetada arista {num1}, {num2}");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine(ex.Message);
+                                    }
+                                }
+
+                                Console.WriteLine("Recorriendo por Anchura");
+                                grafo.BEA(0);
+
+                                break;
                             default:
                                 Console.WriteLine("Opcion no encontrada.");
                                 break;
@@ -754,11 +779,11 @@ namespace ConsoleApp1
                                 break;
                         }
                         break;
-                    
-                    
-                    
+
+
+
                     case "Practico 4":
-                        switch(opciones[1]) //NOTA: REVISAR SI LOS EJERCICIOS DAN LOS RESULTADOS CORRECTOS
+                        switch (opciones[1]) //NOTA: REVISAR SI LOS EJERCICIOS DAN LOS RESULTADOS CORRECTOS
                         {
                             case "Ejercicio 2 - Inciso A":
                                 app.Practico4.Ejercicio2.IncisoA();
@@ -782,6 +807,14 @@ namespace ConsoleApp1
                                 break;
                         }
                         break;
+                    case "Practico 5":
+                        Console.WriteLine("Practico 5 seleccionado. (Aun no implementado)");
+                        break;
+
+                    case "Practico 6":
+                        Console.WriteLine("Practico 6 seleccionado (Aun no implementado).");
+                        break;
+
                     default:
                         Console.WriteLine("Opcion no encontrada.");
                         break;

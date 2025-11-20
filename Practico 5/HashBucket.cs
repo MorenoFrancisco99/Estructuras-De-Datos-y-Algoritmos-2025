@@ -3,83 +3,108 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Open.Collections;
+using Open.Numeric.Primes.Extensions;
 
 namespace ConsoleApp1.Practico_5
 {
     internal class HashBucket
     {
-        private int[,] tablaHashBuckets; //Tabla hash con buckets
-
+        private int[,] tablaHash; //Tabla hash con buckets
+        private int[] tablaContadora;
         private int tamaño;
-        private int bucketSize;
+        private int bucketSize = 3; //Tamaño fijo de los buckets
 
-        string PATH = "C:\\Users\\FRANCISCO\\Documentos\\proj\\LCC Ej\\ConsoleApp1\\Practico 5\\overflow.txt";
 
-        public HashBucket(int tamaño = 199, int bucketSize = 10)
+        public HashBucket(int cantClaves)
         {
-            if (IsPrime(tamaño) == 0)
+            tamaño = (int)(cantClaves / bucketSize);
+            if (!tamaño.IsPrime())
             {
-                Console.WriteLine($"El tamaño {tamaño} no es primo. Se utilizará el siguiente número primo.");
-                tamaño = NextPrime(tamaño);
+                tamaño = (int)PrimeExtensions.NextPrime(tamaño);
             }
-            tablaHashBuckets = new int[tamaño, bucketSize];
-            for (int i = 0; i < tamaño; i++)
-            {
-                for (int j = 0; j < bucketSize; j++)
-                {
-                    tablaHashBuckets[i, j] = -1; // -1 indica que la posicion esta vacia
-                }
-            }
-            this.tamaño = tamaño;
-            this.bucketSize = bucketSize;
+
+            tablaHash = new int[(int)(tamaño * 1.2), bucketSize];
+            tablaContadora = Enumerable.Repeat(-1, tamaño).ToArray(); //Inicializo la tabla contadora en 0
         }
 
 
         public int Insertar(int num)
         {
-            int hashIndex = num % tamaño; //Metodo de la division
-            for (int j = 0; j < bucketSize; j++)
+            int indice = num % tamaño;
+            if (tablaContadora[indice] + 1< bucketSize)
             {
-                if (tablaHashBuckets[hashIndex, j] == -1)
+                tablaContadora[indice]++;
+                tablaHash[indice, tablaContadora[indice]] = num;
+            }
+            else//Si el bucket esta lleno, insertar en overflow
+            {
+                int indiceOverflow = tamaño, indiceBucket = 0; //Empiezo a buscar en la zona de overflow
+                while (indiceOverflow < tablaHash.GetLength(0)) //Mientras no me salga de la tabla
                 {
-                    tablaHashBuckets[hashIndex, j] = num; //Encontró espacio en el bucket
-                    return hashIndex;
+                    if (tablaHash[indiceOverflow, indiceBucket] == 0) //Si encuentro un lugar libre en overflow
+                    {
+                        tablaHash[indiceOverflow, indiceBucket] = num;
+                        break;
+                    }
+                    indiceBucket++; //Sigo buscando en el bucket
+                    if (indiceBucket == bucketSize) //Si termine el bucket, paso al siguiente
+                    {
+                        indiceOverflow++;
+                        indiceBucket = 0;
+                    }
                 }
             }
-            Console.WriteLine($"Bucket lleno en el índice {hashIndex} para el número {num}. Insertando en espacio de overflow");
-
-            InsertarOverflow(num, hashIndex);
-            return -1; // Indica que el bucket está lleno
-        }
-
-
-        private int InsertarOverflow(int num, int hashIndex)
-        {
-            string[] content = System.IO.File.ReadAllLines(PATH);
-            
-
-            return 0;
-        }
-
-        private int IsPrime(int num)
-        {
-            if (num <= 1) return 0;
-            for (int i = 2; i <= Math.Sqrt(num); i++)
-            {
-                if (num % i == 0) return 0;
-            }
             return 1;
+
         }
 
-        private int NextPrime(int num)
+        /* ALTERNATIVA DE OVERFLOW LINEAL
+         
+         for (int i = tamaño; i < tablaHash.GetLength(0); i++)
+    {
+        for (int j = 0; j < bucketSize; j++)
         {
-            int next = num + 1;
-            while (IsPrime(next) == 0)
+            if (tablaHash[i, j] == -1)
             {
-                next++;
+                tablaHash[i, j] = num;
+                return 0; // OK
             }
-            return next;
         }
+    }
+         */
+
+
+        public int Busqueda(int num)
+        {
+            int indice = num % tamaño;
+            for (int i = 0; i < tablaContadora[indice]; i++)
+            {
+                if (tablaHash[indice, i] == num)
+                {
+                    return 1; //Encontrado
+                }
+            }
+            //Si no lo encontre en el bucket, busco en overflow
+            int indiceOverflow = tamaño + 1, indiceBucket = 0;
+            while (indiceOverflow < tablaHash.GetLength(0))
+            {
+                if (tablaHash[indiceOverflow, indiceBucket] == num)
+                {
+                    return tablaHash[indiceOverflow,indiceBucket]; //Encontrado
+                }
+                indiceBucket++;
+                if (indiceBucket == bucketSize)
+                {
+                    indiceOverflow++;
+                    indiceBucket = 0;
+                }
+            }
+            return -1; //No encontrado
+        }
+
+
+
 
     }
 }
